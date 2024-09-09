@@ -123,7 +123,8 @@ def getbatchId():
         response = urllib.request.urlopen(request,timeout=10)
         result = response.read().decode("utf-8")
         result2 = json.loads(result)
-        # print(result2)
+        print("getbatchId result2:")
+        print(result2)
         # print(result2["code"])
         if(result2["code"]==0):
             if "batchId" in result2["data"]:
